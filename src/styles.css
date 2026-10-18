@@ -18,3 +18,20 @@
 @media(prefers-reduced-motion:reduce){.hero-photo,.hero-content{animation:none!important;transition:none!important}}
 .header--overlay{position:absolute;inset:0 0 auto;height:82px;background:rgba(20,37,25,.2);border-bottom:1px solid rgba(255,255,255,.13);backdrop-filter:blur(5px)}.header--overlay .brand-name{color:#fff;text-shadow:0 1px 8px #13251b66}.header--overlay .nav-links a{color:#fff;text-shadow:0 1px 7px #13251b88}.header--overlay .nav-links a:hover,.header--overlay .nav-links a.selected{color:#f2dfb9}.header--overlay .nav-links a.selected:after{background:#f2dfb9}.header--overlay .nav-cta{background:#14251970;border:1px solid #ffffffaa;color:#fff;backdrop-filter:blur(5px)}.header--overlay .nav-cta:hover{background:#a16f39;border-color:#a16f39}
 @media(max-width:620px){.header--overlay{height:auto;min-height:0;background:rgba(23,41,28,.2);backdrop-filter:blur(4px)}.header--overlay .nav-links{padding:3px 0 5px}}
+.menu-toggle{display:none}
+@media(max-width:680px){
+  .header{height:auto;min-height:72px;flex-wrap:nowrap;gap:10px}
+  .header .nav-links{display:none;position:absolute;top:calc(100% + 8px);left:18px;right:18px;z-index:8;order:initial;width:auto;align-items:stretch;flex-direction:column;gap:0;padding:7px;background:#fff;border:1px solid #e7e9e2;box-shadow:0 14px 32px #1f33251c}
+  .header .nav-links.is-open{display:flex}
+  .header .nav-links a{padding:13px 12px;color:#344a38;text-shadow:none;font-size:13px}
+  .header .nav-links a.selected:after{margin-top:4px;width:30px}
+  .header .nav-cta{margin-left:auto;white-space:nowrap}
+  .menu-toggle{width:40px;height:40px;flex:0 0 40px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border:1px solid #dce2d8;border-radius:8px;background:#fff;color:#324a37;cursor:pointer}
+  .menu-toggle span{display:block;width:16px;height:2px;border-radius:2px;background:currentColor;transition:transform .2s,opacity .2s}
+  .menu-open .menu-toggle span:first-child{transform:translateY(6px) rotate(45deg)}
+  .menu-open .menu-toggle span:nth-child(2){opacity:0}
+  .menu-open .menu-toggle span:last-child{transform:translateY(-6px) rotate(-45deg)}
+  .header--overlay .menu-toggle{background:#14251970;border-color:#ffffffaa;color:#fff}
+  .header--overlay .nav-links{background:rgba(23,41,28,.96);border-color:#ffffff30;backdrop-filter:blur(12px)}
+  .header--overlay .nav-links a{color:#fff}
+}
