@@ -1,14 +1,17 @@
 import BookingBar from '../components/BookingBar.jsx'
 import ListingCard from '../components/ListingCard.jsx'
+import PageSlideshow from '../components/PageSlideshow.jsx'
 import SectionHeading from '../components/SectionHeading.jsx'
-import { vehicles } from '../data/travelData.js'
+import { vehicleSlides, vehicles } from '../data/travelData.js'
 
 function VehiclesPage() {
   return (
+    <>
+      <PageSlideshow slides={vehicleSlides} variant="vehicles" actionLabel="Find a vehicle" />
     <section className="listing-page section-wrap" id="vehicles">
       <div className="page-intro">
         <p className="eyebrow">TAKE THE SCENIC ROUTE</p>
-        <h1>The road is<br />part of the <em>story.</em></h1>
+        <h2>The road is<br />part of the <em>story.</em></h2>
         <p>Find a ride for every kind of adventure, from open-roof game drives to easy coastal miles.</p>
       </div>
       <div className="page-booking"><BookingBar defaultService="A vehicle" /></div>
@@ -22,6 +25,7 @@ function VehiclesPage() {
         <a className="text-link" href="#booking">Ask a local <span>↗</span></a>
       </div>
     </section>
+    </>
   )
 }
 

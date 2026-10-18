@@ -1,14 +1,17 @@
 import HotelBookingForm from '../components/HotelBookingForm.jsx'
 import ListingCard from '../components/ListingCard.jsx'
+import PageSlideshow from '../components/PageSlideshow.jsx'
 import SectionHeading from '../components/SectionHeading.jsx'
-import { stays } from '../data/travelData.js'
+import { staySlides, stays } from '../data/travelData.js'
 
 function StaysPage() {
   return (
+    <>
+      <PageSlideshow slides={staySlides} variant="stays" actionLabel="Find a stay" />
     <section className="listing-page section-wrap" id="stays">
       <div className="page-intro">
         <p className="eyebrow">STAY A LITTLE CLOSER</p>
-        <h1>Find your place<br />in <em>Africa.</em></h1>
+        <h2>Find your place<br />in <em>Africa.</em></h2>
         <p>Sleep under a blanket of stars, wake up to the wild, or unwind where the ocean meets the shore.</p>
       </div>
       <div className="page-booking"><HotelBookingForm /></div>
@@ -25,6 +28,7 @@ function StaysPage() {
         <a className="hero-button dark-button" href="#booking">Plan your stay <span>→</span></a>
       </div>
     </section>
+    </>
   )
 }
 

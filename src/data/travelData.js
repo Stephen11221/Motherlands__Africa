@@ -45,3 +45,93 @@ export const vehicles = [
   { name: 'Coast Explorer', place: 'SUV · air conditioning · 5 seats', price: '$92', priceNote: 'per day', image: '/images/coast-explorer.jpg', type: 'Local rental' },
   { name: 'City-to-Savannah Van', place: 'Van · luggage space · 8 seats', price: '$140', priceNote: 'per day', image: '/images/city-to-savannah-van.jpg', type: 'Local rental' },
 ]
+
+export const staySlides = [
+  {
+    image: '/images/mara-house.jpg',
+    alt: 'A welcoming lodge stay in the Maasai Mara',
+    location: 'TALEK · MAASAI MARA',
+    titleFirst: 'Rest close',
+    titleSecond: 'to wonder.',
+    copy: 'Wake with the wild and wind down beneath a sky full of stars.',
+    signature: 'SLOW MORNINGS. WIDE OPEN SKIES.',
+  },
+  {
+    image: '/images/sands-at-nomad.jpg',
+    alt: 'A coastal retreat on the Kenyan coast',
+    location: 'DIANI BEACH · KENYA',
+    titleFirst: 'Let the coast',
+    titleSecond: 'set the pace.',
+    copy: 'Find barefoot days, warm ocean air, and room to breathe.',
+    signature: 'SALT AIR. SOFTER DAYS.',
+  },
+  {
+    image: '/images/loisaba-camp.jpg',
+    alt: 'A quiet tented camp in the African wilderness',
+    location: 'LAIKIPIA · KENYA',
+    titleFirst: 'Stay in the',
+    titleSecond: 'story.',
+    copy: 'Thoughtful places to stay, chosen for the feeling they leave with you.',
+    signature: 'ROOTED HERE. READY TO WELCOME YOU.',
+  },
+]
+
+export const vehicleSlides = [
+  {
+    image: '/images/safari-land-cruiser.jpg',
+    alt: 'A four-wheel-drive vehicle ready for a safari journey',
+    location: 'THE OPEN ROAD · KENYA',
+    titleFirst: 'Take the long',
+    titleSecond: 'way around.',
+    copy: 'Room for the whole crew, a pop-up roof, and front-row views of the wild.',
+    signature: 'DUSTY ROADS. STORIES FOR YEARS.',
+  },
+  {
+    image: '/images/coast-explorer.jpg',
+    alt: 'A vehicle for exploring the Kenyan coast',
+    location: 'COASTAL ROUTES · KENYA',
+    titleFirst: 'Chase the',
+    titleSecond: 'blue horizon.',
+    copy: 'Find your own pace between quiet coves, coastal towns, and open road.',
+    signature: 'WINDOWS DOWN. OCEAN AHEAD.',
+  },
+  {
+    image: '/images/city-to-savannah-van.jpg',
+    alt: 'A comfortable van for a group trip across Africa',
+    location: 'CITY TO SAVANNAH',
+    titleFirst: 'Go further,',
+    titleSecond: 'together.',
+    copy: 'Easy, reliable rides for the miles that make the journey yours.',
+    signature: 'GOOD COMPANY GOES A LONG WAY.',
+  },
+]
+
+export const destinationSlides = [
+  {
+    image: '/images/blyde-river-canyon.jpg',
+    alt: 'A river winding through South Africa’s green canyon',
+    location: 'MPUMALANGA · SOUTH AFRICA',
+    titleFirst: 'Follow the',
+    titleSecond: 'river home.',
+    copy: 'A continent of big horizons, ancient landscapes, and unexpected turns.',
+    signature: 'THERE IS ALWAYS MORE TO FIND.',
+  },
+  {
+    image: '/images/maasai-mara.jpg',
+    alt: 'Open grassland in the Maasai Mara, Kenya',
+    location: 'MAASAI MARA · KENYA',
+    titleFirst: 'Meet Africa',
+    titleSecond: 'in the wild.',
+    copy: 'Watch the savannah come alive in one of Kenya’s most iconic landscapes.',
+    signature: 'WILD PLACES. WARM WELCOMES.',
+  },
+  {
+    image: '/images/diani-beach.jpg',
+    alt: 'A turquoise ocean along Kenya’s coast',
+    location: 'DIANI · KENYA',
+    titleFirst: 'Find your',
+    titleSecond: 'own blue.',
+    copy: 'From green hills to the Indian Ocean, find a place that feels like yours.',
+    signature: 'GO FURTHER. FEEL CLOSER.',
+  },
+]

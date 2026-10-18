@@ -12,7 +12,7 @@ function Header({ page, setPage }) {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className={`header ${page === 'home' ? 'header--overlay' : ''} ${menuOpen ? 'menu-open' : ''}`}>
+    <header className={`header ${menuOpen ? 'menu-open' : ''}`}>
       <a className="brand" href="#home" onClick={() => { setPage('home'); setMenuOpen(false) }}>
         <span className="brand-icon"><AfricaMark /></span>
         <span className="brand-name">motherland<span>africa</span></span>
