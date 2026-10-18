@@ -18,5 +18,5 @@ The booking forms currently provide an on-page trip inquiry confirmation. Connec
 - `src/components/` contains shared UI such as the header, footer, booking forms, cards, and hero slideshow.
 - `src/pages/` contains the Home, Stays, Vehicles, and Destinations page components.
 - `src/data/travelData.js` contains the sample destination, stay, vehicle, and slideshow content.
-- `public/images/` contains the locally stored photos used by the site.
+- `public/images/` contains the locally stored photos and Motherland Africa logo used by the site.
 - `src/App.jsx` selects the active page and renders the shared site layout.

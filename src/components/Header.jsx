@@ -9,7 +9,7 @@ const links = [
 
 function Header({ page, setPage }) {
   return (
-    <header className="header">
+    <header className={`header ${page === 'home' ? 'header--overlay' : ''}`}>
       <a className="brand" href="#home" onClick={() => setPage('home')}>
         <span className="brand-icon"><AfricaMark /></span>
         <span className="brand-name">motherland<span>africa</span></span>
